@@ -10,5 +10,5 @@ add_filter( 'caldera_forms_phone_js_options', function( $options )
 
     // changing initial country code for caldera forms
     $options[ 'initialCountry' ] = sanitize_text_field( $geo -> geoplugin_countryCode );
-	  return $options;
+    return $options;
 });
