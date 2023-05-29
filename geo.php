@@ -5,7 +5,7 @@ function get_geodata()
     $ip = $_SERVER['REMOTE_ADDR'];
     $data = file_get_contents( 'http://www.geoplugin.net/json.gp?ip=' . $ip );
     $geo = json_decode( $data );
-	  return $geo;
+    return $geo;
     // Some useful parameters: 
     // $geo -> geoplugin_countryCode - the code of the country in ISO_3166-1_alpha-2 format, e.g. FR
     // $geo -> geoplugin_countryName - the name of the country, e.g. France
